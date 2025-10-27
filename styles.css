@@ -1,0 +1,38 @@
+:root{
+  --bg:#fff6ea;
+  --card:#ffffff;
+  --accent:#ff6f00;
+  --muted:#666;
+  --dark:#0b2545;
+}
+
+*{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:var(--dark);min-height:100vh;display:flex;flex-direction:column;}
+.topbar{background:var(--dark);color:#fff;padding:14px 20px;}
+.brand{font-weight:700;letter-spacing:0.6px;}
+.container{display:flex;gap:20px;padding:20px;flex:1;max-width:1100px;margin:0 auto;width:100%;}
+.input-card, .preview-card{background:var(--card);border-radius:10px;box-shadow:0 6px 20px rgba(10,10,10,0.06);padding:18px;flex:1;}
+.input-card{max-width:420px;}
+.input-card h2, .preview-card h2{margin-top:0;}
+label{display:block;margin:12px 0 6px;font-weight:600;color:var(--dark);}
+input, textarea, select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:14px;}
+textarea{min-height:80px;resize:vertical;}
+.buttons{display:flex;gap:10px;margin-top:14px;}
+button{padding:10px 14px;border-radius:8px;border:0;font-weight:700;cursor:pointer;}
+button.primary{background:var(--accent);color:#fff;}
+button.secondary{background:#f0f0f0;color:var(--dark);}
+.previewArea{min-height:380px;padding:12px;border-radius:8px;border:1px dashed #eee;background:#fff;}
+.muted{color:var(--muted);}
+
+.footer{text-align:center;padding:12px;color:#666;background:transparent;border-top:1px solid rgba(0,0,0,0.03);}
+
+/* Generated page styles inside preview (kept simple) */
+.generated-wrap{font-family:Montserrat, Arial; color:#222;}
+.gen-header{background:linear-gradient(90deg,#ff8a00,#ff6f00);color:#fff;padding:18px;border-radius:8px 8px 0 0;}
+.gen-title{font-size:22px;margin:0;font-weight:800;}
+.gen-sub{opacity:.95;margin-top:6px;}
+.gen-body{padding:18px;}
+.lesson-list{margin:10px 0;padding-left:18px;}
+.qpaper{background:#f9f9fb;padding:12px;border-radius:8px;border:1px solid #eee;margin-top:12px;}
+.phone-banner{display:flex;gap:12px;align-items:center;margin-top:14px;}
+.phone-call{background:#0b2545;color:#fff;padding:10px 14px;border-radius:8px;font-weight:700;}

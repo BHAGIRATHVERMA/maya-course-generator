@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maya Education — Course Page Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">MAYA EDUCATION — Course Generator</div>
+  </header>
+
+  <main class="container">
+    <section class="input-card">
+      <h2>Course / Topic Generator</h2>
+      <p>यहाँ अपना कोर्स का टॉपिक और कुछ मुख्य points डालिए — और हम आपके लिए पूरा course page + sample question paper बनाएंगे।</p>
+      <label>Course Title</label>
+      <input id="courseTitle" placeholder="उदाहरण: बुनाई शुरू से मास्टर तक" />
+
+      <label>Short Description (1-2 lines)</label>
+      <textarea id="shortDesc" placeholder="कोर्स का छोटा परिचय"></textarea>
+
+      <label>Key Points / Syllabus (comma separated)</label>
+      <input id="syllabus" placeholder="जैसे: परिचय, सामग्री, मशीन सेटअप, सिलाई अभ्यास" />
+
+      <label>Number of Lessons</label>
+      <input id="lessonsCount" type="number" value="5" min="1" max="50" />
+
+      <label>Preferred language for questions</label>
+      <select id="lang">
+        <option value="hi" selected>हिंदी</option>
+        <option value="en">English</option>
+      </select>
+
+      <div class="buttons">
+        <button id="generateBtn" class="primary">Generate Course Page</button>
+        <button id="downloadBtn" class="secondary" disabled>Download Generated HTML</button>
+      </div>
+    </section>
+
+    <section class="preview-card">
+      <h2>Preview — Generated Course Page</h2>
+      <div id="previewArea" class="previewArea">
+        <p class="muted">Generated content will appear here after you click <strong>Generate Course Page</strong>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Made with ❤️ by Maya Education • Demo generator</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
